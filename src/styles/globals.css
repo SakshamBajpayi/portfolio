@@ -278,6 +278,10 @@ button {
     display: none !important;
   }
 
+  .hide-on-mobile {
+    display: none !important;
+  }
+
   /* ── TheSystem: 3-column grid → single column ── */
   .the-system-grid {
     grid-template-columns: 1fr !important;
@@ -315,8 +319,11 @@ button {
     width: auto !important;
   }
   .exp-entry .exp-company {
+    flex: none !important;
+    width: 100% !important;
     font-size: 18px !important;
     white-space: normal !important;
+    overflow: visible !important;
   }
   .exp-entry .exp-role {
     width: auto !important;

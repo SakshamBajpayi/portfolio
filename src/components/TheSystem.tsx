@@ -553,112 +553,114 @@ const TheSystem = () => {
 
       {/* ════════════════════ GEOMETRIC DECORATIONS ════════════════════ */}
 
-      {/* Shard — cream area, blend multiply */}
-      <Shard
-        points="0,20 30,0 50,60 10,50"
-        size={65}
-        color="var(--geo-black)"
-        opacity={0.08}
-        rotation={-18}
-        className="blend-multiply"
-        style={{
-          position: 'absolute',
-          top: '12%',
-          left: '8%',
-          zIndex: 2,
-        }}
-      />
+      <div className="hide-on-mobile">
+        {/* Shard — cream area, blend multiply */}
+        <Shard
+          points="0,20 30,0 50,60 10,50"
+          size={65}
+          color="var(--geo-black)"
+          opacity={0.08}
+          rotation={-18}
+          className="blend-multiply"
+          style={{
+            position: 'absolute',
+            top: '12%',
+            left: '8%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Shard — dark area, blend screen */}
-      <Shard
-        points="20,0 50,20 40,55 0,30"
-        size={55}
-        color="var(--geo-white)"
-        opacity={0.06}
-        rotation={42}
-        className="blend-screen"
-        style={{
-          position: 'absolute',
-          bottom: '14%',
-          right: '12%',
-          zIndex: 2,
-        }}
-      />
+        {/* Shard — dark area, blend screen */}
+        <Shard
+          points="20,0 50,20 40,55 0,30"
+          size={55}
+          color="var(--geo-white)"
+          opacity={0.06}
+          rotation={42}
+          className="blend-screen"
+          style={{
+            position: 'absolute',
+            bottom: '14%',
+            right: '12%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Construction line — mapping across cream */}
-      <ConstructionLine
-        x1={0} y1={0} x2={180} y2={0}
-        color="var(--ink-muted)"
-        className="blend-multiply"
-        style={{
-          opacity: 0.2,
-          transform: 'rotate(-6deg)',
-          position: 'absolute',
-          top: '28%',
-          left: '2%',
-          zIndex: 2,
-        }}
-      />
+        {/* Construction line — mapping across cream */}
+        <ConstructionLine
+          x1={0} y1={0} x2={180} y2={0}
+          color="var(--ink-muted)"
+          className="blend-multiply"
+          style={{
+            opacity: 0.2,
+            transform: 'rotate(-6deg)',
+            position: 'absolute',
+            top: '28%',
+            left: '2%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Construction line — diagonal crossing */}
-      <ConstructionLine
-        x1={0} y1={0} x2={140} y2={0}
-        color="var(--ink-light)"
-        className="blend-screen"
-        style={{
-          opacity: 0.15,
-          transform: 'rotate(32deg)',
-          position: 'absolute',
-          bottom: '22%',
-          right: '6%',
-          zIndex: 2,
-        }}
-      />
+        {/* Construction line — diagonal crossing */}
+        <ConstructionLine
+          x1={0} y1={0} x2={140} y2={0}
+          color="var(--ink-light)"
+          className="blend-screen"
+          style={{
+            opacity: 0.15,
+            transform: 'rotate(32deg)',
+            position: 'absolute',
+            bottom: '22%',
+            right: '6%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Construction line — center vertical feel */}
-      <ConstructionLine
-        x1={0} y1={0} x2={100} y2={0}
-        color="var(--ink-muted)"
-        className="blend-multiply"
-        style={{
-          opacity: 0.12,
-          transform: 'rotate(88deg)',
-          position: 'absolute',
-          top: '18%',
-          left: '48%',
-          zIndex: 2,
-        }}
-      />
+        {/* Construction line — center vertical feel */}
+        <ConstructionLine
+          x1={0} y1={0} x2={100} y2={0}
+          color="var(--ink-muted)"
+          className="blend-multiply"
+          style={{
+            opacity: 0.12,
+            transform: 'rotate(88deg)',
+            position: 'absolute',
+            top: '18%',
+            left: '48%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Node dot accent */}
-      <NodeDot
-        size={5}
-        color="var(--accent-magenta)"
-        style={{
-          opacity: 0.5,
-          animation: 'pulse-dot 2s infinite',
-          position: 'absolute',
-          top: '35%',
-          left: '15%',
-          zIndex: 2,
-        }}
-      />
+        {/* Node dot accent */}
+        <NodeDot
+          size={5}
+          color="var(--accent-magenta)"
+          style={{
+            opacity: 0.5,
+            animation: 'pulse-dot 2s infinite',
+            position: 'absolute',
+            top: '35%',
+            left: '15%',
+            zIndex: 2,
+          }}
+        />
 
-      {/* Small recurring triangle */}
-      <RecurringTriangle
-        size={18}
-        color="var(--geo-black)"
-        rotation={15}
-        filled={false}
-        className="blend-multiply"
-        style={{
-          opacity: 0.1,
-          position: 'absolute',
-          top: '22%',
-          right: '25%',
-          zIndex: 2,
-        }}
-      />
+        {/* Small recurring triangle */}
+        <RecurringTriangle
+          size={18}
+          color="var(--geo-black)"
+          rotation={15}
+          filled={false}
+          className="blend-multiply"
+          style={{
+            opacity: 0.1,
+            position: 'absolute',
+            top: '22%',
+            right: '25%',
+            zIndex: 2,
+          }}
+        />
+      </div>
 
       {/* ════════════════════ AMBIENT COLOUR BLOBS ════════════════════ */}
 

@@ -167,6 +167,7 @@ const Journey: React.FC = () => {
     >
       {/* Background shape: large irregular wash in magenta */}
       <div 
+        className="hide-on-mobile"
         style={{
           position: 'absolute',
           top: '20%',

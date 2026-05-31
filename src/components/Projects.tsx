@@ -147,6 +147,7 @@ const ProjectStrip: React.FC<{ project: ProjectEntry }> = ({ project }) => {
 
         {/* Oversized background number */}
         <motion.span
+          className="hide-on-mobile"
           variants={{
             rest: { opacity: 0.06 },
             hover: { opacity: 0.18 },
@@ -506,7 +507,7 @@ const Projects: React.FC = () => {
       {/* ══════════════════════════════════════════
           AMBIENT COLOUR ZONE — Scattered Explosion
           ══════════════════════════════════════════ */}
-      <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
         {/* Shape A: Large cyan shard */}
         <div style={{ position: 'absolute', top: 0, right: 0, width: '100%', height: '100%', background: '#00BFC8', opacity: 0.18, mixBlendMode: 'screen', clipPath: 'polygon(85% 0%, 100% 0%, 100% 45%, 72% 60%)' }} />
         {/* Thin magenta velocity streak */}

@@ -423,6 +423,7 @@ const Contact: React.FC = () => {
     >
       {/* ── Transition Stripes ── */}
       <div
+        className="hide-on-mobile"
         style={{
           position: 'absolute',
           top: 0,
