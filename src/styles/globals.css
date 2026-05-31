@@ -240,3 +240,169 @@ button {
     opacity: 0.02;
   }
 }
+
+/* ── Hero anti-flash: hide elements until GSAP animates them ── */
+.hero-word-inner {
+  transform: translateY(105%);
+}
+
+.hero-cluster > * {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hero-scroll-label {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-word-inner {
+    transform: translateY(0);
+  }
+  .hero-cluster > * {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .hero-scroll-label {
+    opacity: 1;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE RESPONSIVE OVERRIDES (≤767px)
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+  /* ── Nav ── */
+  .nav-top-right-links {
+    display: none !important;
+  }
+
+  /* ── TheSystem: 3-column grid → single column ── */
+  .the-system-grid {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+    gap: 2rem !important;
+  }
+
+  /* ── TheSystem colour zone: hide on mobile ── */
+  .the-system-colour-zone {
+    display: none !important;
+  }
+
+  /* ── TheSystem left margin note: hide ── */
+  .the-system-margin-note {
+    display: none !important;
+  }
+
+  /* ── Experience: hide colour zone, make text full width ── */
+  .experience-colour-zone {
+    display: none !important;
+  }
+  .experience-text-zone {
+    width: 100% !important;
+  }
+
+  /* ── Experience: compressed row → stack on mobile ── */
+  .exp-entry .exp-compressed-row {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 12px 16px !important;
+    gap: 4px !important;
+    align-items: flex-start !important;
+  }
+  .exp-entry .exp-year {
+    width: auto !important;
+  }
+  .exp-entry .exp-company {
+    font-size: 18px !important;
+    white-space: normal !important;
+  }
+  .exp-entry .exp-role {
+    width: auto !important;
+    text-align: left !important;
+  }
+  .exp-entry .exp-arrow {
+    display: none !important;
+  }
+
+  /* ── Projects: reduce padding ── */
+  .project-strip {
+    padding: 24px 16px !important;
+  }
+  .project-strip h3 {
+    font-size: 24px !important;
+  }
+  .projects-header {
+    padding: 0 16px !important;
+  }
+  .project-casestudy > div {
+    padding-left: 16px !important;
+    max-width: 100% !important;
+  }
+
+  /* ── Obsessions: wrap cards ── */
+  .obsessions-modules {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* ── Obsessions colour zone: hide ── */
+  .obsessions-colour-zone {
+    display: none !important;
+  }
+
+  /* ── Journey: sticky title → static ── */
+  .journey-sticky-title {
+    position: static !important;
+    max-width: 100% !important;
+    padding-top: 40px !important;
+  }
+  .journey-sticky-title h2 {
+    font-size: 48px !important;
+  }
+  .journey-timeline-col {
+    padding-top: 40px !important;
+  }
+  .journey-spine,
+  .journey-spine-fill,
+  .journey-sliding-dot {
+    display: none !important;
+  }
+  .journey-entry {
+    padding-left: 0 !important;
+  }
+
+  /* ── Contact: reduce padding ── */
+  .contact-section {
+    padding: 60px 20px !important;
+  }
+  .contact-links-row {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  .contact-geometry {
+    display: none !important;
+  }
+
+  /* ── Contact footer: stack vertically ── */
+  .contact-footer-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TABLET RESPONSIVE (768px – 1023px)
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .the-system-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .the-system-colour-zone {
+    display: none !important;
+  }
+  .contact-geometry {
+    display: none !important;
+  }
+}

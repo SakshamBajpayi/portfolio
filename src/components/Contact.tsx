@@ -412,7 +412,7 @@ const Contact: React.FC = () => {
       ref={sectionRef}
       data-section="7"
       data-dark
-      className="section-dark"
+      className="section-dark contact-section"
       style={{
         background: 'var(--bg-dark)',
         padding: '120px 60px',
@@ -499,6 +499,7 @@ const Contact: React.FC = () => {
           CONTACT LINKS
           ══════════════════════════════════════════ */}
       <div
+        className="contact-links-row"
         style={{
           display: 'flex',
           flexWrap: 'wrap',
@@ -557,6 +558,7 @@ const Contact: React.FC = () => {
       <div
         ref={geometryRef}
         aria-hidden="true"
+        className="contact-geometry"
         style={{
           position: 'absolute',
           right: '60px',
@@ -832,6 +834,7 @@ const Contact: React.FC = () => {
 
         {/* Footer content */}
         <div
+          className="contact-footer-row"
           style={{
             display: 'flex',
             justifyContent: 'space-between',

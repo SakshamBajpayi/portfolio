@@ -503,6 +503,7 @@ const Experience: React.FC = () => {
 
               {/* ── Compressed row ── */}
               <div
+                className="exp-compressed-row"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -514,7 +515,7 @@ const Experience: React.FC = () => {
               >
                 {/* Year range */}
                 <span
-                  className="font-accent"
+                  className="font-accent exp-year"
                   style={{
                     width: 120,
                     flexShrink: 0,
@@ -530,7 +531,7 @@ const Experience: React.FC = () => {
 
                 {/* Company name */}
                 <span
-                  className="font-heading"
+                  className="font-heading exp-company"
                   style={{
                     flex: 1,
                     fontSize: 24,
@@ -547,7 +548,7 @@ const Experience: React.FC = () => {
 
                 {/* Role */}
                 <span
-                  className="font-accent"
+                  className="font-accent exp-role"
                   style={{
                     width: 200,
                     flexShrink: 0,
@@ -565,6 +566,7 @@ const Experience: React.FC = () => {
 
                 {/* Arrow */}
                 <span
+                  className="exp-arrow"
                   style={{
                     width: 30,
                     flexShrink: 0,

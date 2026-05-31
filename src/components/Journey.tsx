@@ -160,8 +160,9 @@ const Journey: React.FC = () => {
       style={{
         position: 'relative',
         width: '100%',
-        paddingBottom: '80px', // Eliminates gap before Contact
+        paddingBottom: '80px',
         backgroundColor: 'var(--bg-cream)',
+        overflow: 'hidden',
       }}
     >
       {/* Background shape: large irregular wash in magenta */}
@@ -184,7 +185,7 @@ const Journey: React.FC = () => {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 var(--section-pad)', display: 'flex', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
         
         {/* LEFT COLUMN - Sticky Title */}
-        <div style={{ flex: '1 1 300px', maxWidth: '400px', position: 'sticky', top: '80px', height: 'fit-content', paddingTop: '80px', zIndex: 2 }}>
+        <div className="journey-sticky-title" style={{ flex: '1 1 300px', maxWidth: '400px', position: 'sticky', top: '80px', height: 'fit-content', paddingTop: '80px', zIndex: 2 }}>
           <span 
             className="font-accent" 
             style={{ fontSize: '16px', fontWeight: 700, color: '#6B6560', opacity: 0.8, marginBottom: '8px', display: 'block' }}
@@ -221,10 +222,10 @@ const Journey: React.FC = () => {
         </div>
 
         {/* RIGHT COLUMN - Timeline Entries */}
-        <div style={{ flex: '1 1 500px', marginLeft: 'auto', paddingTop: '160px', position: 'relative' }}>
+        <div className="journey-timeline-col" style={{ flex: '1 1 500px', marginLeft: 'auto', paddingTop: '160px', position: 'relative' }}>
           
           {/* Timeline Vertical Spine */}
-          <div style={{ position: 'absolute', top: '180px', bottom: '0', left: '25px', width: '2px', zIndex: 0, backgroundColor: 'var(--ink-muted)', opacity: 0.2 }} />
+          <div className="journey-spine" style={{ position: 'absolute', top: '180px', bottom: '0', left: '25px', width: '2px', zIndex: 0, backgroundColor: 'var(--ink-muted)', opacity: 0.2 }} />
           <div className="journey-spine-fill" style={{ position: 'absolute', top: '180px', bottom: '0', left: '25px', width: '2px', zIndex: 1, transformOrigin: 'top center', background: 'linear-gradient(to bottom, var(--ink-muted), #F26419, #00BFC8, #5B1E9C, #F5C400)' }} />
           <div className="journey-sliding-dot" style={{ position: 'absolute', top: '180px', left: '22px', width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F5C400', zIndex: 2, transform: 'translateY(-50%)' }} />
 

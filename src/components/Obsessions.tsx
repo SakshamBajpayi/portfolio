@@ -456,6 +456,7 @@ const Obsessions: React.FC = () => {
         {/* ── Modules Grid (scattered) ── */}
         <div
           ref={modulesRef}
+          className="obsessions-modules"
           style={{
             display: 'flex',
             flexWrap: 'wrap',

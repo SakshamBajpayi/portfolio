@@ -264,7 +264,7 @@ const TheSystem = () => {
 
       {/* ── Left margin note ── */}
       <span
-        className="font-accent"
+        className="font-accent the-system-margin-note"
         style={{
           position: 'absolute',
           left: '20px',
@@ -284,6 +284,7 @@ const TheSystem = () => {
 
       {/* ── Content grid ── */}
       <div
+        className="the-system-grid"
         style={{
           position: 'relative',
           zIndex: 3,

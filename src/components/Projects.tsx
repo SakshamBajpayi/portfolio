@@ -325,7 +325,7 @@ const ProjectStrip: React.FC<{ project: ProjectEntry }> = ({ project }) => {
                 padding: '0',
               }}
             >
-              <div style={{ padding: '24px 0 24px 160px', maxWidth: '80%' }}>
+              <div style={{ padding: '24px 16px 24px 160px', maxWidth: '80%' }}>
                 {/* Problem */}
                 <p style={{ 
                   fontFamily: 'var(--ff-accent)', fontSize: '13px', fontWeight: 700,
@@ -577,7 +577,7 @@ const Projects: React.FC = () => {
         }}
       >
         {/* ── Section Header ── */}
-        <div style={{ marginBottom: 'clamp(3rem, 6vw, 5rem)', padding: '0 60px', position: 'relative' }}>
+        <div className="projects-header" style={{ marginBottom: 'clamp(3rem, 6vw, 5rem)', padding: '0 60px', position: 'relative' }}>
           {/* Section label */}
           <span className="font-accent" style={{ position: 'absolute', top: '-30px', left: '60px', fontSize: '16px', fontWeight: 700, color: '#F2EDE4', opacity: 0.8, letterSpacing: '0.06em' }}>
             // chapter 04

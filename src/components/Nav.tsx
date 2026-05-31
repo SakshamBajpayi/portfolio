@@ -52,6 +52,7 @@ export default function Nav({ currentSection, scrollProgress }: NavProps) {
 
       {/* ── Top-right: INDEX · LAB · NOTES + pulse dot ── */}
       <div
+        className="nav-top-right-links"
         style={{
           position: 'fixed',
           top: 20,
